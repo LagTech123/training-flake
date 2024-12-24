@@ -20,6 +20,7 @@
         {
           packages = {
             hello = pkgs.callPackage ./packages/hello.nix { };
+            tty-clock = pkgs.callPackage ./packages/tty-clock.nix { };
           };
 
           formatter =
