@@ -19,7 +19,7 @@
         { pkgs, ... }:
         {
           packages = {
-            hello = pkgs.callPackage ./hello.nix { };
+            hello = pkgs.callPackage ./packages/hello.nix { };
           };
 
           formatter =
