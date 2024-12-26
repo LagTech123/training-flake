@@ -1,11 +1,21 @@
-{ stdenv, fetchFromGitLab, ncurses, pkg-config, scdoc }:
+{
+  stdenv,
+  fetchFromGitLab,
+  ncurses,
+  pkg-config,
+  scdoc,
+}:
 stdenv.mkDerivation {
   pname = "cbonsai";
   version = "1.3.1";
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  buildInputs = [ ncurses pkg-config scdoc ];
+  buildInputs = [
+    ncurses
+    pkg-config
+    scdoc
+  ];
 
   src = fetchFromGitLab {
     owner = "jallbrit";
