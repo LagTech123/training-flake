@@ -24,6 +24,7 @@
             tty-clock = pkgs.callPackage ./packages/tty-clock.nix { };
             nano = pkgs.callPackage ./packages/nano.nix { };
             cmatrix = pkgs.callPackage ./packages/cmatrix.nix { };
+            pipes-sh = pkgs.callPackage ./packages/pipes-sh.nix { };
           };
 
           formatter =
