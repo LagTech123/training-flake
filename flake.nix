@@ -23,6 +23,7 @@
             cbonsai = pkgs.callPackage ./packages/cbonsai.nix { };
             tty-clock = pkgs.callPackage ./packages/tty-clock.nix { };
             nano = pkgs.callPackage ./packages/nano.nix { };
+            cmatrix = pkgs.callPackage ./packages/cmatrix.nix { };
           };
 
           formatter =
